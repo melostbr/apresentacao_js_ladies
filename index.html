@@ -1,850 +1,486 @@
-<!doctype html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CLEAN MARKUP = GOOD KARMA.
-      Hi source code lover,
-
-      you're a curious person and a fast learner ;)
-      Let's make something beautiful together. Contribute on Github:
-      https://github.com/webslides/webslides
-
-      Thanks!
-    -->
-
-    <!-- SEO -->
-    <title>Intensivo de ES6 com o JS Ladies</title>
-    <meta name="description" content="Uma introdução sobre conceitos básicos da sintaxe e funcionamento da linguagem Javascript">
-
-    <!-- URL CANONICAL -->
-    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext">
 
     <!-- CSS Base -->
     <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/custom.css">
+
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
 
-    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
-
-    <!-- FACEBOOK -->
-    <meta property="og:url" content="http://your-url.com/permalink"> <!-- EDIT -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
-    <meta property="og:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
-    <meta property="og:updated_time" content="2017-01-04T17:32:14"> <!-- EDIT -->
-    <meta property="og:image" content="static/images/share-webslides.jpg" > <!-- EDIT -->
-
-    <!-- TWITTER -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
-    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
-    <meta name="twitter:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
-    <meta name="twitter:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
-    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
-
     <!-- FAVICONS -->
-    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
-    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
-    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
-    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
-    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
-    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
-    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+    <link rel="icon" href="static/images/favicons/logo.png">
 
-    <!-- Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#333333">
+    <title>Intensivo de ES6 com o JS Ladies</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Uma introdução sobre conceitos básicos da sintaxe e funcionamento da linguagem Javascript">
+    <!-- URL CANONICAL
+    <link rel="canonical" href="http://your-url.com/permalink">
+    -->
   </head>
   <body>
-    <!--
-    <header role="banner">
-      <nav role="navigation">
-        <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
-        <ul>
-          <li class="github">
-            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
-              <svg class="fa-github">
-                <use xlink:href="#fa-github"></use>
-              </svg>
-              <em>WebSlides</em>
-            </a>
-          </li>
-          <li class="twitter">
-            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
-              <svg class="fa-twitter">
-                <use xlink:href="#fa-twitter"></use>
-              </svg>
-              <em>@WebSlides</em>
-            </a>
-          </li>
-          <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li>
-        </ul>
-      </nav>
-    </header>
-  -->
 
     <main role="main">
       <article id="webslides">
-
-        <!-- Quick Guide
-          - Each parent <section> in the <article id="webslides"> element is an individual slide.
-          - Vertical sliding = <article id="webslides" class="vertical">
-          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
-        -->
-
-        <section class="bg-apple aligncenter">
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <h1><img class="whitelogo" src="static/images/logos/apple.svg" alt="Apple Logo"></h1>
-          </div>
-          <!-- .end .wrap -->
+        <section class="inicio">
         </section>
-        <section class="bg-apple">
-          <!--.wrap = container (width: 90%) -->
+        <section id="section-4" class="slide current" style="">
           <div class="wrap size-50">
-            <h1>Make a Keynote presentation using HTML</h1>
-            <p class="text-intro">WebSlides is an open source framework for building HTML presentations, landings, and portfolios.</p>
-            <p><code>.bg-apple</code></p>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple aligncenter">
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <h2>HTML presentations can be easy</h2>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <div class="wrap">
-            <h2>Features</h2>
-            <ul class="flexblock features">
-              <li>
-                <div>
-                  <h2>
-                    <span>&rarr;</span>
-                    Simple Navigation
-                  </h2>
-                  with arrow keys and swipe.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    <svg class="fa-link">
-                      <use xlink:href="#fa-link"></use>
-                    </svg>
-                    Permalinks
-                  </h2>
-                  Go to a specific slide.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    <svg class="fa-clock-o">
-                      <use xlink:href="#fa-clock-o"></use>
-                    </svg>
-                    Slide Counter
-                  </h2>
-                  Current/Total number
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    <span>40<sup>+</sup></span>
-                    Beautiful Components
-                  </h2>
-                  Covers, cards, quotes...
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    <svg class="fa-text-height">
-                      <use xlink:href="#fa-text-height"></use>
-                    </svg>
-                    Vertical Rhythm
-                  </h2>
-                  Use multiples of 8.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    <span>500<sup>+</sup></span>
-                    SVG Icons
-                  </h2>
-                  Font Awesome Kit.
-                </div>
-              </li>
-            </ul>
+            <h3>Agenda de Hoje</h3>
+            <p>Prometo tentar cumprir ao máximo :)</p>
+            <hr>
+            <ol class="text-cols">
+              <li><a href="#slide=4">Breve história do Javascript</a></li>
+              <li><a href="#slide=5">Tipos de Dados</a></li>
+              <li><a href="#slide=6">Como armazenar informação</a></li>
+              <li><a href="#slide=7">Operações Lógicas</a></li>
+              <li><a href="#slide=8">Estruturas de Controle</a></li>
+              <li><a href="#slide=9">Operadores Matemáticos</a></li>
+              <li><a href="#slide=10">Como adicionar o Javascript no Html</a></li>
+              <li><a href="#slide=13">Exercícios #01</a></li>
+              <li><a href="#slide=14">Listas</a></li>
+              <li><a href="#slide=15">Funções</a></li>
+              <li><a href="#slide=16">Escopo de uma variável</a></li>
+              <li><a href="#slide=17">Closures</a></li>
+              <li><a href="#slide=18">Objetos</a></li>
+              <li><a href="#slide=19">Exercícios #02</a></li>
+              <li><a href="#slide=20">Arrow Functions</a></li>
+              <li><a href="#slide=21">Rest e Spread operators</a></li>
+              <li><a href="#slide=22">Exercícios #03</a></li>
+              <li><a href="#slide=23">Orientação a Objetos</a></li>
+              <li><a href="#slide=24">Mini Projeto</a></li>
+            </ol>
           </div>
         </section>
-        <section class="bg-apple">
+        <section>
           <div class="wrap">
-            <div class="content-left">
-              <h2>WebSlides was made to inspire people.</h2>
-            </div>
-            <!-- end .content-left -->
-            <div class="content-left">
-              <p>WebSlides is a wonderful way to showcase your company. All content is for demo purposes only. Images are property of their respective owners.</p>
-            </div>
-            <!-- end .content-left -->
-            <ul class="flexblock">
-              <li>
-                <div>
-                  <img class="whitelogo" src="static/images/logos/google.svg" alt="Google">
-                </div>
+            <h3>O que preciso fazer pra aprender?</h3>
+            <ul class="flexblock steps">
+              <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
+              <li style='background-color: #D0A0ED'>
+                <span>
+                  <svg class="fa-heartbeat">
+
+                  </svg>
+                </span>
+                <h2>01. Bastante paciência</h2>
+                <p>Comigo, contigo, com as colegas. Estamos todas aprendendo sempre.</p>
               </li>
-              <li>
-                <div>
-                  <img class="whitelogo" src="static/images/logos/netflix.svg" alt="Netflix">
-                </div>
+              <li style='background-color: #B36FDC'>
+                <div class="process step-2"></div>
+                <span>
+                  <svg class="fa-magic">
+
+                  </svg>
+                </span>
+                <h2>02. Prática</h2>
+                <p>Na hora de fazer os exercícios, pratique o quanto puder e tire todas as dúvidas que precisar.</p>
               </li>
-              <li>
-                <div>
-                  <img class="whitelogo" src="static/images/logos/microsoft.svg" alt="Microsoft">
-                </div>
+              <li style='background-color: #842CB8'>
+                <div class="process step-3"></div>
+                <span>
+                  <svg class="fa-balance-scale">
+
+                  </svg>
+                </span>
+                <h2>03. Continue a estudar</h2>
+                <p>Não leve o que dissermos aqui como regra. Procure por mais informações oficiais, participe de fóruns e multiplique seu conhecimento.</p>
+              </li>
+              <li style='background-color: #6B0AA5'>
+                <div class="process step-4"></div>
+                <span>
+                  <svg class="fa-cog">
+
+                  </svg>
+                </span>
+                <h2>04. Adote uma iniciante</h2>
+                <p>A partir de hoje vocês não serão mais "iniciantes" e "pouco" que acharem que aprenderam pode ser muito pra alguém. Espalhe a boa ação :)</p>
               </li>
             </ul>
           </div>
           <!-- .end .wrap -->
         </section>
-        <section class="bg-apple">
-          <div class="wrap">
-            <div class="content-left">
-              <h2>WebSlides help you build a culture of excellence.</h2>
-            </div>
-            <!-- end .content-left -->
-            <div class="content-left">
-              <p>The art of storytelling. Hypertext, clean code, and beauty as narrative elements. Just essential features and lovely CSS. All content is for demo purposes only. </p>
-            </div>
-            <!-- end .content-left -->
-            <ul class="flexblock metrics">
-              <li> Founded
-                <span>1976</span>
-              </li>
-              <li>
-                <span>
-                  <svg class="fa-users">
-                    <use xlink:href="#fa-users"></use>
-                  </svg>
-                </span>
-                524M Subscribers
-              </li>
-              <li>
-                <span>
-                  <svg class="fa-line-chart">
-                    <use xlink:href="#fa-line-chart"></use>
-                  </svg>
-                </span>
-                Revenue: $16M
-              </li>
-              <li>
-                Monthly Growth
-                <span>64%</span>
-              </li>
-            </ul>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <!--.wrap o <nav> = container 1200px -->
-          <div class="wrap">
-            <ul class="flexblock metrics border">
-              <li> Founded
-                <span>1976</span>
-              </li>
-              <li>
-                <span>
-                  <svg class="fa-users">
-                    <use xlink:href="#fa-users"></use>
-                  </svg>
-                </span>
-                524M Subscribers
-              </li>
-              <li>
-                <span>
-                  <svg class="fa-line-chart">
-                    <use xlink:href="#fa-line-chart"></use>
-                  </svg>
-                </span>
-                Revenue: $16M
-              </li>
-              <li>
-                Monthly Growth
-                <span>64%</span>
-              </li>
-              <li>
-                <span>
-                  <svg class="fa-building-o">
-                    <use xlink:href="#fa-building-o"></use>
-                  </svg>
-                </span>
-                6 Offices
-              </li>
-              <li>
-                <span>
-                  <svg class="fa-smile-o">
-                    <use xlink:href="#fa-smile-o"></use>
-                  </svg>
-                </span>
-                14K Employees
-              </li>
-              <li>
-                <span>
-                $4M
-                </span>
-                EBITDA
-              </li>
-              <li>
-                <span>
-                  <svg class="fa-university">
-                    <use xlink:href="#fa-university"></use>
-                  </svg>
-                </span>
-                Bank: $76B
-              </li>
-            </ul>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple aligncenter">
-          <span class="background dark" style="background-image:url('https://source.unsplash.com/pb_lF8VWaPU/')"></span>
-          <div class="wrap">
-            <h2 class="text-data">3,456,789</h2>
-            <h3>iPhone 7 in first 24 hours</h3>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple aligncenter">
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <h2 class="text-data">$48 Billion</h2>
-            <h3>Revenue in Q4 2024</h3>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple slide-bottom">
-          <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
-          <span class="background" style="background-image:url('https://source.unsplash.com/Y5Tjb62cxl8/')"></span>
-          <div class="wrap">
-            <div class="content-left">
-              <p>
-                <svg class="large fa-tree">
-                  <use xlink:href="#fa-tree"></use>
-                </svg>
+        <section id="historia-javascript" class="fullscreen slide current" id="section-35" style="">
+          <div class="card-50">
+            <div class="flex-content">
+              <h2>Brendan Eich</h2>
+              <p class="text-intro">Criador do Javascript.
               </p>
-              <h2>1,000,000</h2>
-              <h3>We're working to protect up to a million acres of sustainable forest.</h3>
+              <ul class="description">
+                <li>Criado em 1995, o Javascript foi concebido em 10 dias. Nesse <a href="https://youtu.be/fg4e-2lBw5E?t=1131">video</a> ele conta mais sobre suas motivações.</li>
+                <li><strong class="text-label">Fun Fact #01:</strong><br> Era pra se chamar Mocha, mas chamá-la de "Javascript" foi uma tentativa de pegar carona na popularidade do Java na época</li>
+                <li><strong class="text-label">Fun Fact #02:</strong><br>Hoje usamos o termo Javascript, mas o correto deveria ser <a href="https://www.ecma-international.org/ecma-262/">EcmaScript</a> (pois atualmente é padronizada pela Ecma International)</li>
+              </ul>
             </div>
+            <figure>
+              <img src="static/images/brendaneich.jpg" alt="Brendan Eich">
+            </figure>
           </div>
-          <!-- .end .wrap -->
         </section>
-        <section class="bg-apple">
+
+        <section id="tipos-dados">
           <div class="wrap">
-            <div class="card-50">
-              <figure><img class="aligncenter" src="static/images/iphone.png" alt="iPhone"></figure>
-              <div class="flex-content">
-                <h2>
-                  <svg class="fa-apple">
-                    <use xlink:href="#fa-apple"></use>
-                  </svg>
-                  iPhone 7
-                </h2>
-                <p class="text-intro">3D Touch, 12MP photos, and 4K video.</p>
-                <p>Every iPhone they have made was built on the same belief. That a phone should be more than a collection of features. That, above all, a phone should be absolutely simple, beautiful, and magical to use.</p>
-              </div>
-              <!-- end .flex-content-->
-            </div>
-            <!-- end .card-50-->
+            <h2 class="text-shadow"><strong>Tipos de Dados</strong></h2>
+            <ul class="flexblock features fadeInUp">
+              <li>
+                <div>
+                  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></h3>
+                  Pra essa linguagem, número é número, seja ele um número inteiro ou decimal.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></h3>
+                  Qualquer texto (ou aquilo que você escrever entre aspas) é definido como string.<br>
+                  <code>"Eu &#9829; Javascript"</code>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></h3>
+                  Famosa "lógica booleana": <code>true</code> (verdadeiro) ou <code>false</code> (falso)
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></h3>
+                  Quando queremos definir um valor "nulo" ou vazio
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></h3>
+                  Quando não há um tipo definido. Na maioria das vezes, não difere muito do <code>null</code>.
+                </div>
+              </li>
+            </ul>
           </div>
-          <!-- .end .wrap -->
         </section>
-        <section class="bg-apple">
+
+        <section id="armazenar-dados">
           <div class="wrap">
             <div class="grid vertical-align">
               <div class="column">
-                <h2>
-                  <svg class="fa-apple">
-                    <use xlink:href="#fa-apple"></use>
-                  </svg>
-                  iPhone 7
-                </h2>
-                <p class="text-intro">We worked closely with the very talented people at Acme and created a new website. Content demo. </p>
-                <ul class="description">
-                  <li>
-                    <span class="text-label">
-                    Client:
-                    </span>
-                    Apple (2016)
-                  </li>
-                  <li>
-                    <span class="text-label">
-                    Services:
-                    </span>
-                    Web Design
-                  </li>
-                  <li>
-                    <span class="text-label">
-                    Website:
-                    </span>
-                    <a href="https://apple.com/iphone/">apple.com/iphone</a>
-                  </li>
-                </ul>
+                <h3 class="text-shadow"><strong>Guardando informações</strong></h3>
+                <p class="text-intro">Quando estamos programando, naturalmente vamos querer armazenar resultados ou valores pra que seja mais fácil de recuperá-los posteriormente</p>
               </div>
-              <!-- end .column-->
               <div class="column">
-                <figure>
-                  <img src="static/images/iphone.png" alt="iPhone">
-                </figure>
+                <pre>
+let euMudo = 10;
+euMudo = 12; //Permite ser atualizada
+
+const euNaoMudo = 15;
+euNaoMudo = 20; //Não permite ser atualizada
+TypeError: Assignment to constant variable.
+...
+                </pre>
               </div>
-              <!-- end figure-->
-            </div>
-            <!-- end .grid-->
-          </div>
-          <!-- end .wrap-->
-        </section>
-        <section class="bg-apple">
-          <div class="wrap">
-            <div class="card-50">
-              <div class="flex-content">
-                <ul class="flexblock specs">
-                  <li>
-                    <div>
-                      <svg class="fa-wifi">
-                        <use xlink:href="#fa-wifi"></use>
-                      </svg>
-                      <h2>Ultra-Fast WiFi</h2>
-                      Faster LTE with the best worldwide roaming.
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <svg class="fa-camera">
-                        <use xlink:href="#fa-camera"></use>
-                      </svg>
-                      <h2>Two cameras that shoot as one.</h2>
-                      12MP wide angle.
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <svg class="fa-life-ring">
-                        <use xlink:href="#fa-life-ring"></use>
-                      </svg>
-                      <h2>Lifetime Warranty </h2>
-                      We'll fix it or if we can't, we'll replace it.
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- end .flex-content-->
-              <figure>
-                <img class="aligncenter" src="static/images/iphone.png" alt="iPhone 6">
-              </figure>
             </div>
           </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple aligncenter">
-          <div class="wrap zoomIn">
-            <h1>
-              <svg class="fa-apple">
-                <use xlink:href="#fa-apple"></use>
-              </svg>
-              Pay
-            </h1>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <span class="background-left-bottom" style="background-image:url('static/images/iphone-hand.png')"></span>
-          <div class="wrap">
-            <div class="content-right">
-              <h2>
-                Redesigning
-                <svg class="fa-apple">
-                  <use xlink:href="#fa-apple"></use>
-                </svg>
-                Pay
-              </h2>
-              <p>We've been working with the Acme team over the last three months to build a new app.</p>
-              <p>
-                <a href="#" class="button" title="Case study">Case study &rsaquo;</a>
-                <a href="https://www.apple.com/apple-pay/" class="button ghost" title="Apple Website">Open site &rsaquo;</a>
-              </p>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <span class="background-right-bottom" style="background-image:url('static/images/iphone-hand.png')"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="content-left">
-              <h2>Payments Made Simple</h2>
-              <p>Apple Pay is so easy. Pay with your debit cards and credit cards with just a touch.</p>
-              <div class="content-left">
-                <h3>Secure</h3>
-                <p>Your card is never stored. Apple Pay uses a device-specific number and unique transaction code.</p>
-              </div>
-              <!-- .end .content-left -->
-              <div class="content-left">
-                <h3>Universal</h3>
-                <p>Apple Pay works with most major credit and debit cards from nearly all banks.</p>
-              </div>
-              <!-- .end .content-left -->
-            </div>
-            <!-- .end .content-left -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <span class="background-left-bottom" style="background-image:url('static/images/iphone-hand.png')"></span>
-          <div class="wrap">
-            <div class="content-right">
-              <ul class="flexblock specs">
-                <li>
-                  <div>
-                    <svg class="fa-bolt">
-                      <use xlink:href="#fa-bolt"></use>
-                    </svg>
-                    <h2>Incredibly fast</h2>
-                    Just hold your iPhone near the reader.
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <svg class="fa-globe">
-                      <use xlink:href="#fa-globe"></use>
-                    </svg>
-                    <h2>Works with all major banks</h2>
-                    Apple Pay is accepted in restaurants, hotels...
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <svg class="fa-lock">
-                      <use xlink:href="#fa-lock"></use>
-                    </svg>
-                    <h2>The safer way to pay</h2>
-                    Your card number is never stored.
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <span class="background-right-bottom" style="background-image:url('static/images/iphone-hand.png')"></span>
-          <div class="wrap">
-            <div class="content-left">
-              <h1>
-                <svg class="fa-apple">
-                  <use xlink:href="#fa-apple"></use>
-                </svg>
-                Pay
-              </h1>
-              <p>Use your iPhone to pay securely and easily at over a million store locations and within apps — with a single touch. See where you can use Apple Pay:
-              </p>
-              <form class="user" action="/" method="post">
-                <input type="text" name="location" placeholder="Stores in your city..." required>
-                <button type="submit" title="Search">Search &rsaquo;</button>
-              </form>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <blockquote class="text-quote">
-              <p>I'm an optimist in the sense that I believe humans are noble and honorable, and some of them are really smart. I have a very optimistic view of individuals.</p>
-              <p>
-                <cite>
-                  <!-- <img class="avatar-56" src="static/images/avatar.jpg" alt="Avatar"> --> Steve Jobs.
-                </cite>
-              </p>
-            </blockquote>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <span class="background-right-bottom" style="background-image:url('https://webslides.tv/static/images/tim-cook.png')"></span>
-          <div class="wrap">
-            <div class="content-left">
-              <blockquote>
-                <p>&ldquo;We see that privacy is a fundamental human right that people have. We are going to do everything that we can to help maintain that trust.&rdquo;</p>
-                <p><cite>Tim Cook, CEO of Apple.</cite></p>
-              </blockquote>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <header>
-            <!--.wrap o <nav> = container 1200px -->
-            <div class="wrap">
-              <p>Header <span class="alignright">.alignright</span></p>
-            </div>
-          </header>
-          <div class="aligncenter fadeInUp">
-            <h2>Simple CSS Alignments</h2>
-            <p>Put content wherever you want.</p>
-          </div>
-          <footer class="bg-trans-dark">
-            <div class="wrap">
-              <p>
-                <span class="alignleft">
-                Footer
-                </span>
-                <span class="alignright">
-                  <a href="#" title="Twitter">
-                    <svg class="fa-twitter">
-                      <use xlink:href="#fa-twitter"></use>
-                    </svg>
-                    @username
-                  </a>
-                </span>
-              </p>
-            </div>
-          </footer>
-        </section>
-        <section class="bg-apple slide-top">
-          <div class="wrap">
-            <div class="content-left">
-              <h3>1/9 left top</h3>
-              <p>Put content wherever you want. Have less. Do more. Create beautiful solutions.</p>
-              <p><code>.slide-top and .content-left</code></p>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple slide-top">
-          <div class="wrap">
-            <div class="content-center">
-              <h3>2/9 center top</h3>
-              <p>Apple I was designed and hand-built by Steve Wozniak. Steve Jobs had the idea of selling the computer.</p>
-              <p><code>.slide-top and .content-center</code></p>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple slide-top">
-          <div class="wrap">
-            <div class="content-right">
-              <h3>3/9 right top</h3>
-              <p>The Apple II is one of the first highly successful computers.</p>
-              <p><code>.slide-top and .content-right</code></p>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <div class="wrap">
-            <div class="content-left">
-              <h3>4/9 left center</h3>
-              <p>The Apple III is a business-oriented personal computer that was intended as the successor to the Apple II series.</p>
-              <p><code>.content-left</code></p>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <div class="wrap">
-            <div class="content-center">
-              <h3>5/9 center</h3>
-              <p>Apple Lisa was one of the first personal computers to offer a graphical user interface.</p>
-              <p><code>.content-center</code></p>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <div class="wrap">
-            <div class="content-right">
-              <h3>6/9 right center</h3>
-              <p>The Macintosh was the company's first mass-market personal computer featuring a GUI and mouse.</p>
-              <p><code>.content-right</code></p>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple slide-bottom">
-          <div class="wrap">
-            <div class="content-left">
-              <h3>7/9 left bottom</h3>
-              <p>The iBook was a line of laptop computers designed and marketed by Apple Inc. from 1999 to 2006.</p>
-              <p><code>.slide-bottom</code> and <code>.content-left</code></p>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple slide-bottom">
-          <div class="wrap">
-            <div class="content-center">
-              <h3>8/9 center bottom</h3>
-              <p>Apple introduced the first generation iPod on October 23, 2001, with the slogan "1,000 songs in your pocket".</p>
-              <p><code>.slide-bottom</code> and <code>.content-center</code></p>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple slide-bottom">
-          <div class="wrap">
-            <div class="content-right">
-              <h3>9/9 right bottom</h3>
-              <p>The original iPhone was introduced by Steve Jobs on January 9, 2007. Jobs introduced the iPhone as a combination of three devices.</p>
-              <p><code>.slide-bottom</code> and <code>.content-right</code></p>
-            </div>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <div class="wrap size-50">
-            <h2>CSS Animations</h2>
-            <p>Fadein transition to all slides.</p>
-            <pre>&lt;article id="webslides"&gt;
-  &lt;section&gt;
-    &lt;div class="wrap fadeInUp"&gt;
-      &lt;h1&gt;Slide&lt;/h1&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/article&gt;</pre>
-            <p>Just 5 basic animations: .fadeIn, .fadeInUp, .zoomIn, .slideInLeft, and .slideInRight.</p>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-black aligncenter">
-          <span class="background light" style="background-image:url('https://source.unsplash.com/UxtIESWxLh8/')"></span>
-          <div class="wrap">
-            <h2>Embedding Media</h2>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple">
-          <div class="wrap">
-            <div class="content-left">
-              <h3><a href="https://webslides.tv/demos/media#slide=2">YouTube API</a></h3>
-              <p>Embed videos with loop, autoplay, and muted attributes. The video will automatically play when the slide is loaded.</p>
-              <pre>&lt;div class="embed"&gt;
- &lt;div data-youtube data-youtube-id=&quot;CQY3KUR3VzM&quot; data-autoplay &gt;&lt;/div&gt;
-&lt;/div&gt;</pre>
-              <p><code>.embed</code> (responsive)</p>
-            </div>
-            <!-- end .content-left -->
-            <div class="content-left">
-              <!-- <div class="embed"> = Responsive -->
-              <div class="embed">
-                <div data-youtube data-youtube-id="CQY3KUR3VzM" data-autoplay data-no-controls></div>
-              </div>
-              <!-- end .embed -->
-            </div>
-            <!-- end .content-left -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple fullscreen">
-          <!-- Fullscreen Video -->
-          <div class="embed">
-            <div data-youtube data-youtube-id="lvOKBQvbLhg" data-autoplay></div>
-          </div>
-          <!-- .end .embed -->
-        </section>
-        <section class="fullscreen bg-apple aligncenter">
-         <div class="embed">
-           <video autoplay loop muted poster="https://webslides.tv/static/images/peggy.jpg">
-            <source src="https://webslides.tv/static/videos/peggy.mp4" type="video/mp4">
-           </video>
-          </div><!-- .embed -->
-          <!-- .wrap = container (width: 90%) -->
-          <div class="wrap size-50">
-            <h2><strong>Be Awesome</strong></h2>
-          </div>
-        </section>
-        <section class="fullscreen bg-black aligncenter">
-          <div class="embed dark">
-             <video autoplay loop muted poster="https://webslides.tv/static/images/peggy.jpg">
-             <source src="https://webslides.tv/static/videos/peggy.mp4" type="video/mp4">
-            </video>
-          </div><!-- .embed -->
-          <!-- .wrap = container (width: 90%) -->
-          <div class="wrap size-50">
-            <h2><strong>Think Different</strong></h2>
-            <p>Overlay: <code>fullscreen.bg-black > .embed.dark</code> or .light</p>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple aligncenter">
-          <span class="background-right-bottom" style="background-image:url('https://webslides.tv/static/images/tim-cook.png')"></span>
-          <div class="wrap">
-            <h1>One more thing...</h1>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple aligncenter">
-          <div class="wrap">
-            <div class="cta">
-              <div class="number">
-                <p><span>Ag</span></p>
-              </div>
-              <!--end .number -->
-              <div class="benefit">
-                <p class="text-subtitle">San Francisco</p>
-                <h3><strong>The quick brown fox jumps over the lazy dog</strong>.</h3>
-                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                <p>abcdefghijklmnopqrstuvwxyz</p>
-                <p>1234567890(,.;:?!$&*)</p>
-              </div>
-              <!--end .benefit -->
-            </div>
-            <!--end .cta -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple aligncenter">
-          <!-- .wrap = container (width: 90%) -->
-          <div class="wrap">
-            <h2><strong>Start in seconds</strong></h2>
-            <p class="text-intro">120+ prebuilt slides ready to use.</p>
-            <p>
-              <a href="https://webslides.tv/webslides-latest.zip" class="button" title="Download WebSlides">
-                <svg class="fa-cloud-download">
-                  <use xlink:href="#fa-cloud-download"></use>
-                </svg>
-                Free Download
-              </a>
-              <span class="try">
-                <a href="https://www.paypal.me/jlantunez/8" title="Good karma :)">
-                  <svg class="fa-paypal">
-                    <use xlink:href="#fa-paypal"></use>
-                  </svg>
-                  Pay what you want.
-                </a>
-              </span>
-            </p>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="bg-apple aligncenter">
-          <h2 class="text-emoji zoomIn">😎</h2>
-          <h3><strong>Thank you!</strong></h2>
-          <p><a href="https://twitter.com/webslides" title="@WebSlides on Twitter">@WebSlides</a></p>
         </section>
 
+        <section id="operadores-logicos">
+          <div class="wrap">
+            <h2 class="text-shadow"><strong>Operadores Lógicos</strong></h2>
+            <p class="text-intro">As vezes, precisamos fazer algumas validações lógicas pra realizarmos decisões no nosso código</p>
+
+            <ul class="flexblock features fadeInUp">
+              <li>
+                <div>
+                  <h2>Comparações 'simples"</h2>
+                  <code>console.log(3 > 2) //True</code><br>
+                  <code>console.log(3 < 2) //False</code>
+                  <hr>
+                  <p>É possível comparar duas strings, mas lembre-se que o javascript analisa cada caractere, da esquerda pra direita.</p>
+                  <code>console.log("a" > "z") //False</code><br>
+                  <code>console.log("pixar" > "disney") //True</code>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h2>Operador ternário</h2>
+                  <p>Ele analisa o primeiro parâmetro e "age" conforme o resultado for <code>true</code> (verdadeiro) ou <code>false</code> (falso)</p>
+                  <code>console.log(true ? 1 : 2); // → 1</code><br>
+                  <code>console.log(false ? 1 : 2); // → 2</code>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="estruturas-controle">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3 class="text-shadow"><strong>Estruturas de Controle</strong></h3>
+                <p class="text-intro">Em alguns momentos precisaremos permitir que o nosso programa decida qual pra qual "caminho" ele deverá ir.</p>
+                <p>Se a nossa regra de negócio exige que, dependendo de determinado resultado, o nosso programa execute uma tarefa diferente da esperada, estamos realizando um controle. As principais formas de realizar esse feito é atraves do <code>if/else</code>,<code>while</code>, <code>for</code> ou até mesmo o "operador ternário" que vimos anteriormente</p>
+              </div>
+              <div class="column">
+                <pre>
+var nome = 'gatinhos';
+if (nome == 'cachorrinhos') {
+  nome += ' fofinhos';
+} else if (nome == 'gatinhos') {
+  nome += ' dominam os humanos';
+} else {
+  nome += '!';
+}
+nome == 'gatinhos dominam os humanos'; //true
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="operadores">
+          <div class="wrap size-50">
+            <h2 class="text-shadow"><strong>Operações Matemáticas</strong></h2>
+            <p class="text-intro">Podemos realizar operações matemáticas simples com os seguintes operadores:</p>
+            <ul class="description">
+              <li> <strong>soma:</strong>
+                <code>2 + 2 = 4</code>
+              </li>
+              <li> <strong>subtração:</strong>
+                <code>2 - 2 = 0</code>
+              </li>
+              <li> <strong>divisão:</strong>
+                <code>2 / 2 = 1</code>
+              </li>
+              <li> <strong>multiplicação:</strong>
+                <code>2 * 4 = 8</code>
+              </li>
+              <li> <strong>resto da divisão (ou módulo):</strong>
+                <code>2 % 2 = 0</code>
+              </li>
+          </div>
+        </section>
+
+        <section id="overview-01">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3 class="text-shadow"><strong>Onde escrevo meu código?</strong></h3>
+                <p class="text-intro">
+                  Se você estiver escrevendo o script dentro do seu arquivo “.html”, seu código deve ser escrito entre as tags <code>&lt;script&gt;&lt;/script&gt;</code> tanto dentro do <code>&lt;head&gt;</code> quanto no <code>&lt;body&gt;</code>.
+                </p>
+              </div>
+
+              <div class="column">
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    <span class="code-comment">&lt;!-- Ele pode ficar aqui --&gt;</span>
+  &lt;/head&gt;
+  &lt;body&gt;
+    <span class="code-comment">&lt;!-- Ou aqui --&gt;</span>
+    &lt;script&gt;
+      altert(“Olá!”);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="overview-02">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-intro">Ou ser "importado" de outro arquivo</p>
+              </div>
+
+              <div class="column">
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    <span class="code-comment">&lt;!-- Ele pode ficar aqui --&gt;</span>
+  &lt;/head&gt;
+  &lt;body&gt;
+    <span class="code-comment">&lt;!-- Ou aqui --&gt;</span>
+    &lt;script src="js/meuScript.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="overview-03">
+          <div class="wrap size-60">
+            <h2 class="text-shadow"><strong>Vantagens de um arquivo externo</strong></h2>
+            <ul class="description">
+              <li>Separar o html e o css do que for código ou regra de negócio</li>
+              <li>O código é mais fácil de ler e manter</li>
+              <li>Pode agilizar o carregamento das suas páginas (performance)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="exercicio-01">
+          <!--
+          Praticar as seguintes operações:
+          console.log(true && false) // → false
+          console.log(true && true) // → true
+
+          console.log(false || true) // → true
+          console.log(false || false) // → false
+
+          Salvar os comandos `console.log` em um arquivo javascript e ver aparecer a log no console do browser;
+
+          Ensinar mais operações lógicas com matemáticas, lógica com o "curto circuito" ou "operador ternario"
+                    console.log(1 + 1 == 2 && 10 * 10 > 50)
+                    console.log(true ? 1 : 2); // → 1
+                    console.log(false ? 1 : 2); // → 2
+          -->
+        </section>
+
+
+
+        <section id="listas">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h2 class="text-shadow"><strong>Listas</strong></h2>
+                <p class="text-intro">Existe uma estrutura que nos permite "colecionar coisas".</p>
+                <p>As listas são estruturas "prontas" que possuem alguns métodos que podemos usar. Os principais são: <code>push</code>, <code>pop</code>, <code>map</code> e <code>reduce</code>.
+                <!-- Explicar as outras funções direto no console -->
+              </div>
+              <div class="column">
+                <pre>
+let frutinhas = ['banana', 'abacaxi', 'maçã'];
+
+frutinhas.push('pêra');
+
+console.log(frutinhas);
+//['banana', 'abacaxi', 'maçã', 'pêra']</pre>
+              </div>
+
+        </section>
+
+        <section id="funcoes">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h2 class="text-shadow"><strong>Funções</strong></h2>
+                <p class="text-intro">Repetição de código tem solução!</p>
+                <p>As vezes temos que escrever mais de um trecho de código, o que o torna repetitivo e difícil de manter.</p>
+              </div>
+              <div class="column">
+                <pre>
+function soma(valor01, valor02){
+    console.log(valor01 + valor02);
+}
+
+soma(2,3);
+// 5</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="escopo-variavel">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h2 class="text-shadow"><strong>Escopo de variáveis</strong></h2>
+                <p class="text-intro"><code>global</code> e  <code>local</code></p>
+              </div>
+              <div class="column">
+                <pre>
+function funcaoA() {
+  const a = 1; //escopo global
+
+  function funcaoB() {
+    const b = 4; //escopo local
+    return a + b;
+  }
+
+  // `console.log(b)` aqui nos daria um erro
+  return nestedFunc(); // 5
+}</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="closures">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h2 class="text-shadow"><strong>Closures</strong></h2>
+                <p class="text-intro">Cuida do "escopo" da variável, evitando que ele seja "perdido".</p>
+                <p>Em determinadas situações, podemos precisar acessar uma informação mais de uma vez em nosso código. Como as variáveis possuem escopo locais dentro de funções, é possível acessá-las por meio de <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript#Closures">closures</a></code> conforme o exemplo:</p>
+              </div>
+              <div class="column">
+                <pre>
+function multiplicador(a) {
+  return function(b) {
+    return a * b;
+  };
+}
+
+const duplica = multiplicador(2);
+duplica(3); //6
+
+const triplica = multiplicador(3);
+triplica(2); //6</pre>
+              </div>
+              <!-- Mostrar um exemplo de um código sendo alterado intevidamente por conta do escopo global http://jsfiddle.net/johel/fz9x0rbp/-->
+        </section>
+
+        <section id="objetos">
+        </section>
+
+        <section class="exercicio-02">
+          <!--
+          Implementar a função que retorna o minimo de dois numeros;
+          console.log(min(0, 10));// → 0
+          console.log(min(0, -10));
+
+          Multiplicar por 2 todos os numeros de uma lista;
+          -->
+        </section>
+
+        <section id="Arrow Functions">
+        </section>
+
+        <section id="Rest e Spread Operators">
+        </section>
+
+        <section id="exercicio-03">
+        </section>
+
+        <section id="orientacao-objetos">
+        </section>
+
+        <!-- Escolher o Projeto
+          <section id="projeto-jogo-da-velha">
+          </section>
+          <section id="projeto-maquina-citacoes">
+          </section>
+          <section id="projeto-calculadora">
+          </section>
+          <section id="projeto-caderninho-receitas">
+          </section>
+        -->
       </article>
     </main>
-    <!--main-->
+
 
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
@@ -855,6 +491,5 @@
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="static/js/svg-icons.js"></script>
-
   </body>
 </html>

@@ -1,0 +1,48 @@
+/* Colors */
+$js-ladies: #9b4aca;
+$white: #fff;
+$black: #000;
+
+/* Models */
+%gif-cover {
+  background: center no-repeat fixed;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.inicio {
+  background: center/50% no-repeat url('../images/logo.png');
+}
+
+.exercicio-01 {
+  @extend %gif-cover;
+  background-image: url('../images/coding_hard.gif') ;
+  background-size: 40%;
+}
+
+.exercicio-02 {
+  @extend %gif-cover;
+  background-image: url('../images/superhacker.gif') ;
+  background-size: 70%;
+}
+
+
+.hands-on {
+  @extend %gif-cover;
+  background-image: url('../images/code-error.gif') ;
+}
+
+.slide {
+  background-color: $js-ladies;
+  color: $white;
+
+  .features {
+    color: $black;
+  }
+
+  pre {
+    color: $black;
+  }
+}
